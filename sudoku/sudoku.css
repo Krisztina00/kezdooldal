@@ -1,0 +1,88 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    background-color: #cac8fb; /* Light pink background */
+}
+
+hr {
+    width: 500px;
+    border: 1px dashed #ff7eb9; /* Pink dashed line */
+    margin: 20px auto;
+}
+
+#errors {
+    color: #ff7eb9; /* Pink error text */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff; /* White Sudoku board */
+    border: 5px solid #ff7eb9; /* Pink border */
+    border-radius: 10px;
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #ff7eb9; /* Pink border */
+    background-color: #fff; /* White tile background */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff7eb9; /* Pink text color */
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff7eb9; /* Pink background for digits */
+    border-radius: 10px;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 2px solid #fff; /* White border */
+    margin: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff7eb9; /* Pink text color */
+    background-color: #fff; /* White background */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.number:hover {
+    background-color: #ff9cba; /* Light pink background on hover */
+}
+
+.number-selected {
+    background-color: #ff9cba; /* Light pink background for selected numbers */
+}
+
+.tile-start {
+    background-color: #ffecb8; /* Light yellow for starting tiles */
+}
+
+.horizontal-line {
+    border-bottom: 2px dashed #ff7eb9; /* Pink dashed horizontal lines */
+}
+
+.vertical-line {
+    border-right: 2px dashed #ff7eb9; /* Pink dashed vertical lines */
+}

@@ -1,0 +1,92 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif');
+    font-family: "Arial", sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* A teljes ablakmagasság elfoglalása */
+}
+
+#questionContainer {
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4; /* Rózsaszín cím szín */
+}
+
+p {
+    color: #ff69b4; /* Rózsaszín szöveg szín */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff69b4; /* Rózsaszín keret */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff69b4; /* Rózsaszín gomb háttér */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493; /* Sötétebb rózsaszín hover esetén */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Helyes válasz animációja */
+@keyframes correctAnswer {
+    0% {
+        background-color: #87cefa;
+        color: #00008b;
+        transform: scale(0.8);
+        border-radius: 0%;
+    }
+    100% {
+        background-color: #87cefa;
+        color: #00008b;
+        transform: scale(1);
+        border-radius: 20px; /* Lekerekített szélek hozzáadása */
+    }
+}
+
+/* Helyes válasz animációja */
+@keyframes wrongAnswer {
+    0% {
+        background-color: #00008b;
+        color: #fff;
+        transform: scale(0.8);
+        border-radius: 0%;
+    }
+    100% {
+        background-color: #00008b;
+        color: #fff;
+        transform: scale(1);
+        border-radius: 20px; /* Lekerekített szélek hozzáadása */
+    }
+}
+
+/* A helyes válasz animációja */
+.correct {
+    animation: correctAnswer 0.5s ease-in-out;
+}
+
+/* A rossz válasz animációja */
+.wrong {
+    animation: wrongAnswer 0.5s ease-in-out;
+}
